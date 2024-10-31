@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText cho ô tìm kiếm -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/searching"
+        android:inputType="text"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:layout_marginBottom="16dp"
+        tools:ignore="LabelFor" />
+
+    <!-- RecyclerView để hiển thị danh sách sinh viên -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="369dp" />
+
+    <Button
+        android:id="@+id/buttonToBai3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toBai3"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

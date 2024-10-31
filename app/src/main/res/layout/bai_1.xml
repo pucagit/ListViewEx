@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input EditText for number -->
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Nhập một số nguyên dương"
+        android:inputType="number"
+        tools:ignore="LabelFor" />
+
+    <!-- Radio Buttons for selecting type of numbers -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evenNumber" />
+
+        <RadioButton
+            android:id="@+id/radioOdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oddNumber"
+            android:layout_marginStart="10dp" />
+
+        <RadioButton
+            android:id="@+id/radioSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/squareNumber"
+            android:layout_marginStart="10dp" />
+    </RadioGroup>
+
+    <!-- Button to show the results -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show"
+            android:layout_marginTop="16dp"
+            android:layout_weight="2"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/buttonToBai2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toBai2"
+            android:layout_marginTop="16dp"
+            android:layout_weight="2"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+
+    <!-- ListView to display the results -->
+
+    <!-- TextView for error messages -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
