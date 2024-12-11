@@ -1,5 +1,6 @@
 package com.example.listviewexcercise
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
@@ -18,6 +19,11 @@ class Bai3Activity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bai_3)
+
+        findViewById<Button>(R.id.buttonToBai4).setOnClickListener {
+            val intent = Intent(this, Bai4Activity::class.java)
+            startActivity(intent)
+        }
 
         addressHelper = AddressHelper(resources)
 

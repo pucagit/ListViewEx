@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ListViewExcercise"
         tools:targetApi="31">
         <activity
+            android:name=".Bai4Activity"
+            android:exported="false" />
+        <activity
             android:name=".Bai1Activity"
             android:exported="true">
             <intent-filter>
@@ -20,16 +23,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- Định nghĩa Activity cho bài 2 -->
+        </activity> <!-- Định nghĩa Activity cho bài 2 -->
         <activity
             android:name=".Bai2Activity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Bai3Activity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
